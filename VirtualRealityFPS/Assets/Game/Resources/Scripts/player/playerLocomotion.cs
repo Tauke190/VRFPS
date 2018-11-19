@@ -55,10 +55,6 @@ public class playerLocomotion : MonoBehaviour
         float movementInput_x = 0f; //clear movement inputs for new assignment
         float movementInput_y = 0f; //
 
-
-		ArmSwinger armSwingerComponant = cameraRig.GetComponent<ArmSwinger>();
-        armSwingerComponant.enabled = false;
-
         switch (inputManager.controlMode)
         {
             case 0:
@@ -69,10 +65,6 @@ public class playerLocomotion : MonoBehaviour
             case 1:
                 movementInput_x = Input.GetAxis("Left Stick X Axis"); //set the movement inputs to the controller's left stick axis values
                 movementInput_y = Input.GetAxis("Left Stick Y Axis"); //
-                break;
-
-            case 2:
-                armSwingerComponant.enabled = true;
                 break;
         }
 
