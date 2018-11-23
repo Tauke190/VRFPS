@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class itemHandler : MonoBehaviour 
 {
-    public Collider gripCollider;
+	
+    public Transform gripMount;
+
 }
