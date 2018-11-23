@@ -97,6 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4117786711762404}
+  - component: {fileID: 114369784640707586}
   - component: {fileID: 195762958724590290}
   - component: {fileID: 114408373739823344}
   m_Layer: 11
@@ -736,7 +737,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1160630285631014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.318, y: -0.10595362, z: -0.04}
+  m_LocalPosition: {x: -4.0867133, y: -0.05297681, z: -1.0631752}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4187083171016206}
@@ -1267,6 +1268,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114369784640707586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1160630285631014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d8524f0e2123447a04a38a04b8cb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entitieType: 0
+  hostileEntities: 
+  alliedEntities: 
 --- !u!114 &114408373739823344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1278,22 +1293,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf72a55944114634e932993d55ee488b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  huntedEnemy: {fileID: 0}
-  zombieChar: {fileID: 4187083171016206}
-  zombieSpeed: 1
-  missingGroup1:
-  - {fileID: 4249756150793280}
-  - {fileID: 4447412487973924}
-  - {fileID: 4425379341014448}
-  - {fileID: 4907564342406248}
-  missingGroup2:
-  - {fileID: 4795583688745624}
-  - {fileID: 4269397852687822}
-  missingGroup3:
-  - {fileID: 4641375094304392}
-  - {fileID: 4249756150793280}
-  - {fileID: 4447412487973924}
-  navAgent: {fileID: 195762958724590290}
+  npcChar: {fileID: 4187083171016206}
+  missingLimbGroup1: []
+  missingLimbGroup2: []
+  missingLimbGroup3: []
 --- !u!137 &137050426524696096
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

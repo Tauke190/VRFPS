@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class VR_equipDetector : MonoBehaviour {
 
-    public Transform selectedObject;
+    public GameObject selectedObject;
+    public Collider gripCollider;
 	[HideInInspector]
 	public  string nameofthegun;
 
     void OnTriggerStay(Collider detectedCollision)
     {
-        selectedObject = detectedCollision.gameObject.transform;
+        selectedObject = detectedCollision.gameObject;
 		nameofthegun = detectedCollision.gameObject.name;
-
     }
 }
